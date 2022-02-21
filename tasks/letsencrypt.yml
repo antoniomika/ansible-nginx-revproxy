@@ -2,7 +2,7 @@
 
 - name: Install certbot-auto
   get_url:
-    url: https://dl.eff.org/certbot-auto
+    url: https://raw.githubusercontent.com/certbot/certbot/master/letsencrypt-auto-source/letsencrypt-auto
     dest: /usr/bin/certbot-auto
     mode: "a+x"
   when: nginx_revproxy_certbot_auto
